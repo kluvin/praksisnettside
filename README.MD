@@ -1,6 +1,6 @@
 This repository contains the files used to build a website presenting my internship.
 
-It uses the static site generator [Hugo](gohugo.io) with a port of the [Dimension theme](https://themes.gohugo.io/dimension/) from [HTML5 UP](https://html5up.net/).
+It uses the static site generator [Hugo](https://gohugo.io) with a port of the [Dimension theme](https://themes.gohugo.io/dimension/) from [HTML5 UP](https://html5up.net/).
 
 # Installation
 
