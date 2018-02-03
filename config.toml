@@ -1,6 +1,6 @@
 theme = "dimension"
 languagecode = "no"
-title = 'Praksis hos <object data="vidi-logo.svg" style="height: 1em" alt="Vidi"></object>'
+title = 'Praksis hos <object data="vidi-logo.svg" style="height: 2em; vertical-align: text-bottom" alt="Vidi"></object>'
 
 [params]
   description = 'En presentasjon av praksis hos <a href="https://vidi.no/">Vidi</a>'
