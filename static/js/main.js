@@ -323,32 +323,49 @@
     var sitemapMetaTag = $('meta[name=sitemap]').attr('content');
     var sitemap = sitemapMetaTag.split(';');
 
-    var currentPath = window.location.hash.substring(1);
-    var currentPathIndex = sitemap.indexOf(currentPath);
+    var currentPath = null;
+    var currentPathIndex = null;
+
+    // First time Initialization
+    updateCurrentPath();
+
+    function updateCurrentPath() {
+      currentPath = window.location.hash.substring(1);
+      currentPathIndex = sitemap.indexOf(currentPath);
+    }
 
     $('.next_article_btn').on('click', () => {
-      nextArticleIndex = currentPathIndex + 1;
+      updateCurrentPath();
+      var nextArticleIndex = currentPathIndex + 1;
       location.hash = sitemap[nextArticleIndex];
       currentPathIndex = nextArticleIndex;
     });
 
     $('.prev_article_btn').on('click', () => {
-      prevArticleIndex = currentPathIndex - 1;
-      location.hash = sitemap[prevArticleIndex];
-      currentPathIndex = prevArticleIndex;
+      updateCurrentPath();
+      var prevArticleIndex = currentPathIndex - 1;
+      if (prevArticleIndex >= 0) {
+        location.hash = sitemap[prevArticleIndex];
+        currentPathIndex = prevArticleIndex;
+      } else {
+        $main._hide(true);
+      }
     });
 
+    var $navbarArticle = $('nav ul li a');
+    $navbarArticle.on('click', updateCurrentPath);
 
     $body.on('click', function (event) {
       if ($body.hasClass('is-article-visible'))
         $main._hide(true);
+
     });
 
     $window.on('keyup', function (event) {
 
       switch (event.keyCode) {
 
-        case 27:
+          case 27:
 
           // Article visible? Hide.
           if ($body.hasClass('is-article-visible'))
@@ -361,8 +378,6 @@
 
       }
     });
-
-    $main.on('click', () => {console.log('hello')})
     
     $window.on('hashchange', function (event) {
 
