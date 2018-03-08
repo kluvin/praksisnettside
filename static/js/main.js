@@ -320,8 +320,8 @@
 
     // Events.    
     // Article navigation
-    var sitemapMetaTag = $('meta[name=sitemap]').attr('content');
-    var sitemap = sitemapMetaTag.split(';');
+    var $sitemap = $('meta[name=sitemap]');
+    var sitemap = $sitemap.attr('content').split(';');
 
     var currentPath = null;
     var currentPathIndex = null;
@@ -334,23 +334,27 @@
       currentPathIndex = sitemap.indexOf(currentPath);
     }
 
-    $('.next_article_btn').on('click', () => {
-      updateCurrentPath();
-      var nextArticleIndex = currentPathIndex + 1;
-      location.hash = sitemap[nextArticleIndex];
-      currentPathIndex = nextArticleIndex;
-    });
+    $('.next_article_btn').on('click', nextArticle);
+    function nextArticle() { navigateRelativeToCurrentIndex(+1); }
+    
+    $('.prev_article_btn').on('click', previousArticle);
+    function previousArticle() { navigateRelativeToCurrentIndex(-1); }
 
-    $('.prev_article_btn').on('click', () => {
+    function navigateRelativeToCurrentIndex(index) {
       updateCurrentPath();
-      var prevArticleIndex = currentPathIndex - 1;
-      if (prevArticleIndex >= 0) {
-        location.hash = sitemap[prevArticleIndex];
-        currentPathIndex = prevArticleIndex;
+
+      var newArticleIndex = currentPathIndex + index;
+      if (legalArticleIndex(newArticleIndex)) {
+        location.hash = sitemap[newArticleIndex];
+        currentPathIndex = newArticleIndex;
       } else {
         $main._hide(true);
       }
-    });
+    }
+    
+    function legalArticleIndex(index) {
+      return (index >= 0);
+    }
 
     var $navbarArticle = $('nav ul li a');
     $navbarArticle.on('click', updateCurrentPath);
@@ -444,6 +448,6 @@
         $main._show(location.hash.substr(1), true);
       });
 
-  });
+    });
 
-})(jQuery);
+  })(jQuery);
