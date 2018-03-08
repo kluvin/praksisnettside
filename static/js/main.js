@@ -306,8 +306,6 @@
 
       closeArticleButton.appendTo($this)
       closeArticleButton.on('click', function () {
-        console.log('close')
-
         location.hash = '';
       });
 
