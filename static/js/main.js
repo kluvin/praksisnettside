@@ -375,7 +375,15 @@
 
           break;
 
-        default:
+          case 37: // left arrow
+            previousArticle();
+            break;
+
+          case 39: // right arrow
+            nextArticle();
+            break;
+
+          default:
           break;
 
       }
