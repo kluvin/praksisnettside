@@ -1,0 +1,52 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes" ?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Praksis hos &lt;object data=&#34;vidi-logo.svg&#34; style=&#34;height: 2em; vertical-align: text-bottom&#34; alt=&#34;Vidi&#34;&gt;&lt;/object&gt;</title>
+    <link>/</link>
+    <description>Recent content on Praksis hos &lt;object data=&#34;vidi-logo.svg&#34; style=&#34;height: 2em; vertical-align: text-bottom&#34; alt=&#34;Vidi&#34;&gt;&lt;/object&gt;</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>no</language>
+    
+	<atom:link href="/index.xml" rel="self" type="application/rss+xml" />
+    
+    
+    <item>
+      <title>Hva Gjør Du</title>
+      <link>/hva-gjor-du/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>/hva-gjor-du/</guid>
+      <description>Arbeidsoppgaven jeg fikk opprinnelig levert var langsiktig og til en grad svært ambisiøs. Siden en måned med utplassering en dag per uke ikke en gang dekker en normal arbeidsuke på fem dager endte oppgaven opp med å lang tid, til slutt ble den satt på hyllen.
+Etter dette så fortsatte jeg med et selvvalgt prosjekt. Dette prosjektet ble heller ikke ferdiggjort fordi en dag på praksis i uken ikke er nok til å få konsistent fremgang.</description>
+    </item>
+    
+    <item>
+      <title>Hva Ser De Etter</title>
+      <link>/hva-ser-de-etter/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>/hva-ser-de-etter/</guid>
+      <description>Vidi ser etter søkere som er selvdreven og har apputvikling- og Linux-interesse. Når de ansetter folk er det aller viktigste interesse.</description>
+    </item>
+    
+    <item>
+      <title>Hvor Er De</title>
+      <link>/hvor-er-de/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>/hvor-er-de/</guid>
+      <description>Vidi kan finnes i Laguneveien 7, Lagunen i Rådal
+‌</description>
+    </item>
+    
+    <item>
+      <title>Risikovurdering</title>
+      <link>/risikovurdering/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>/risikovurdering/</guid>
+      <description>Last ned dokumentet</description>
+    </item>
+    
+  </channel>
+</rss>
