@@ -3,6 +3,6 @@ languagecode = "no"
 title = 'Praksis hos <object data="vidi-logo.svg" style="height: 2em; vertical-align: text-bottom" alt="Vidi"></object>'
 
 [params]
-  description = 'En presentasjon av praksis hos <a href="https://vidi.no/">Vidi</a>'
+  description = 'En presentasjon av praksis hos <a href="https://vidi.no/">Vidi</a> - Denne siden på <a href="https://github.com/kluvin/praksisnettside/">GitHub</a>'
   logo = "/favicon.ico"
 copyright = "Martin Kleiven"
